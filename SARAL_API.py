@@ -20,6 +20,7 @@ def function(user):
         else:
             j=0
             while j<len(child):
+                print("  ",str(i+1)+'.'+str(j+1),child[j]["name"])
                 j+=1
         i+=1
     return my_data
@@ -42,7 +43,7 @@ def function_2(my_data):
     else:
         i=0
         while i<len(my_data[user1]["childExercises"]):
-            print(i+1,my_data[user1]["childExercises"][i]["name"])
+            print('   '+str(i+1),my_data[user1]["childExercises"][i]["name"])
             i+=1
         print("**********Welcome in child page**********")
         child_input = int(input("Enter the question number: "))
