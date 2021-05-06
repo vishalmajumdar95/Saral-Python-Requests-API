@@ -5,7 +5,7 @@ def function(user):
     user_id = b["availableCourses"][user-1]["id"]
     api2="https://saral.navgurukul.org/api/courses/"+str(user_id)+"/exercises"
     data=requests.get(api2)
-    convert_data=data.json()
+#     convert_data=data.json()
     print(convert_data)
     with open("exercise.json","w")as fp:
         json.dump(convert_data,fp,indent=4)
