@@ -1,5 +1,5 @@
 # Saral-Python-Requests-API
-###I made this project Using Saral API in Terminal To Learn Any cource available.
+### I made this project Using Saral API in Terminal To Learn Any cource available.
 
 SARAL is the eLearning platform of NavGurukul, which is available on website http://saral.navgurukul.org. I have created app where users can access the content of saral using the terminal.
 
