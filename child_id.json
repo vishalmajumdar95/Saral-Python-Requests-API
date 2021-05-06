@@ -1,0 +1,12 @@
+{
+    "id": "2351",
+    "parent_exercise_id": "2347",
+    "name": " Question 1 ",
+    "slug": "dictionary__Questions/question1",
+    "sequence_num": 7001,
+    "review_type": "peer",
+    "solution": null,
+    "content": "[{\"type\":\"markdown\",\"value\":\"Ek program likhiye jisse ki niche di hui dictionaries ek hi dictionary me aa jaaye jaise ki niche Expected result me diya gaya hain or jisski bhi keys same hai unki values add ho jai. ***Example :-*** `Input :- ` `Output :- ` \"}]",
+    "submission_type": "url",
+    "github_link": "https://github.com/navgurukul/newton/tree/master/dictionary/Questions/question1.md"
+}
