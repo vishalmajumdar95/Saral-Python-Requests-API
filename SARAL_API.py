@@ -31,16 +31,15 @@ def function_2(my_data):
     user1 = user1-1
     print(my_data[user1]["name"])
     slug = my_data[user1]["slug"]
-    if my_data[user1]["childExercises"]==[]:
-        print(slug)
-        slug_api = requests.get("https://saral.navgurukul.org/api/courses/"+str(user)+"/exercise/getBySlug?slug="+my_data[user1]["slug"])
-        slug_data = slug_api.json()
-        with open("slug_id.json","w") as f:
-            json.dump(slug_data,f,indent=4)
-        slug_input = input("Do you want slug (yes or no):").lower()
-        if slug_input=="yes":
-            print(slug_data["content"])
-    else:
+    print(slug)
+    slug_api = requests.get("https://saral.navgurukul.org/api/courses/"+str(user)+"/exercise/getBySlug?slug="+my_data[user1]["slug"])
+    slug_data = slug_api.json()
+    with open("slug_id.json","w") as f:
+        json.dump(slug_data,f,indent=4)
+    slug_input = input("Do you want slug (yes or no):").lower()
+    if slug_input=="yes":
+        print(slug_data["content"])
+    if my_data[user1]["childExercises"]!=[]:
         i=0
         while i<len(my_data[user1]["childExercises"]):
             print('   '+str(i+1),my_data[user1]["childExercises"][i]["name"])
